@@ -1,0 +1,19 @@
+{
+  "name": "jwunderg/328/Final_Project_328",
+  "authors": [
+    {
+      "name": "James Wunder",
+      "email": "jwunder2@mail.greenriver.edu"
+    },
+    {
+      "name": "Jake Gerard",
+      "email": "wgerard4@mail.greenriver.edu"
+    }
+  ],
+  "require":{
+    "bcosca/fatfree-core": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["classes/","model/","controller/"]
+  }
+}
