@@ -3,20 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>My Workout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-<header>Create basic header</header>
+<nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">
+            <a href="home.html">
+                myWorkout...
+            </a>
+        </span>
+</nav>
+<div class="container">
+    <fieldset class="text-center">
+        <h1>Welcome to myWorkout</h1>
+        <p>Ask here if you don't know what workout to do next
+            or you are looking for a different workout/type.</p>
 
-<h1>Welcome to My Workout</h1>
-<h3>Description of use/purpose of site</h3>
+            <form action="#" method="post">
 
-<div>
-    <p>Create a login for user to store data, should use input/form</p>
+                <!-- get food -->
+                <div class="form-group">
+                    <label for="fname" class="col-sm-4 control-label">First Name</label>
+
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="fname" id="fname" value="{{ @fname }}">
+                    </div>
+
+                    <!-- display an error message if there is one -->
+                    <check if="{{ isset(@errors['fname']) }}">
+                        <span class="err">{{ @errors['fname'] }}</span>
+                    </check>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="lname" class="col-sm-4 control-label">Last Name</label>
+
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="lname" id="lname" value="{{ @lname }}">
+                    </div>
+
+                    <!-- display an error message if there is one -->
+                    <check if="{{ isset(@errors['lname']) }}">
+                        <span class="err">{{ @errors['lname'] }}</span>
+                    </check>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="user" class="col-sm-4 control-label">Username</label>
+
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="user" id="user" value="{{ @user }}">
+                    </div>
+
+                    <!-- display an error message if there is one -->
+                    <check if="{{ isset(@errors['user']) }}">
+                        <span class="err">{{ @errors['user'] }}</span>
+                    </check>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="height" class="col-sm-4 control-label">Height</label>
+
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="height" id="height" value="{{ @height }}">
+                    </div>
+
+                    <!-- display an error message if there is one -->
+                    <check if="{{ isset(@errors['height']) }}">
+                        <span class="err">{{ @errors['height'] }}</span>
+                    </check>
+                </div>
+                <br>
+
+                    <p>Create section to check previous workout and continue</p>
+                    <button>Move to next page</button>
+            </form>
+    </fieldset>
 </div>
+<footer>
+    <div id="footerContent" class="bg-light">
+        <div><a href="mailto:example@mail.com" id="F1">
+            example@mail.com</a></div>
+        <div><a href="tel:1-234-567-8910" id="F2">
+            1-234-567-8910</a></div>
+        <div><a href="#" id="F3">
+            About</a></div>
+        <div><a href="#" id="F4">
+            Sign Up</a></div>
+        <div><a href="#" id="F5">
+            Login</a></div>
+    </div>
 
-<p>Create section to check previous workout and continue</p>
-<button>Move to next page</button>
+    <div class="text-center" id="team">
+        Designed by Team Boost
+    </div>
 
-<footer>Create basic footer</footer>
+    <div id="social">
+        <!--Social media-->
+        <a href="#">Twitter </a>
+        <a href="#"> Facebook </a>
+        <a href="#"> Linkdin </a>
+        <a href="#"> Email </a>
+        <a href="#"> Instagram</a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (min-width: 481px){
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+footer {
+    background: white;
+    width: 100%;
+    margin-top: 100%;
+    margin-bottom: 0;
+}
+
+footer > #footerContent {
+    display: grid;
+    text-align: center;
+    border-bottom: 1px solid rgb(233,236,239);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                        "F1 F2 F3 F4 F5"
+}
+
+footer > div#social {
+    margin-top: 10px;
+    text-align: center;
+}
